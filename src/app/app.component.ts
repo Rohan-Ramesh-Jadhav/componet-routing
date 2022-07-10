@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'componet-routing';
+
+  private visiblity:boolean = false;
+
+  changeVisiblity(){
+    this.visiblity = !this.visiblity;
+  }
+
+  checkVisiblity(){
+    return this.visiblity;
+  }
 }
